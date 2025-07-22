@@ -11,7 +11,7 @@ A complete Dockerized Laravel application for book reviews, featuring:
 - Nginx web server configuration
 - Automatic code synchronization
 
-## 🖥️ Server Architecture
+## Server Architecture
 
 ### Nginx Configuration
 
