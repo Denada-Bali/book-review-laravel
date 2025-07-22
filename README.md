@@ -62,3 +62,8 @@ Pre-configured with:
 
    ```bash
    docker-compose exec laravel php artisan migrate
+
+
+
+> **Note**: Contributor count includes Laravel framework developers.  
+> Actual project authors: [Your Name](https://github.com/Denada-Bali)
