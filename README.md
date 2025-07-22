@@ -10,7 +10,7 @@ A complete Dockerized Laravel application for book reviews, featuring:
 -  Nginx web server configuration
 -  Automatic code synchronization
 
-## 🖥️ Server Architecture
+## Server Architecture
 
 ### Nginx Configuration
 Pre-configured with:
@@ -25,7 +25,14 @@ Pre-configured with:
 - Volume-mapped directories:
   - `./` → `/var/www/html` (Entire project)
   - `./nginx/nginx.conf` → Nginx config
-    
+
+### **Troubleshooting Blade Issues**
+    ```bash
+# If Blade changes aren't appearing:
+    docker-compose exec laravel php artisan cache:clear
+    docker-compose exec laravel php artisan view:clear
+The docker-compose exec laravel prefix is necessary because we're running commands inside our Docker container rather than on our host machine.
+Which means our Laravel app runs in a container (like a virtual machine).
 
 ## Prerequisites
 
