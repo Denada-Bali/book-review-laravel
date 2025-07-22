@@ -19,5 +19,17 @@ A complete Dockerized Laravel application for book reviews, featuring:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/book-review.git
+   git clone [https://github.com/yourusername/book-review.git](https://github.com/Denada-Bali/book-review-laravel.git)
    cd book-review
+2. Start the containers
+   ```bash
+   docker-compose up -d --build
+3. Install dependencies
+   ```bash
+   docker-compose exec laravel composer install
+5. Generate application key
+    ```bash
+    docker-compose exec laravel php artisan key:generate
+6. Run migrations
+   ```bash
+   docker-compose exec laravel php artisan migrate
