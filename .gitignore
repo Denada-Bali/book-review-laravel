@@ -1,24 +1,36 @@
-*.log
+# OS/Editor files
 .DS_Store
-.env
+Thumbs.db
+.idea/
+.vscode/
+.fleet/
+.nova/
+.zed/
+
+# Laravel files
+.env*
+!.env.example
 .env.backup
 .env.production
-.phpactor.json
+.phpunit.cache
 .phpunit.result.cache
-/.fleet
-/.idea
-/.nova
-/.phpunit.cache
-/.vscode
-/.zed
-/auth.json
-/node_modules
-/public/build
-/public/hot
-/public/storage
-/storage/*.key
-/storage/pail
-/vendor
+.phpactor.json
 Homestead.json
 Homestead.yaml
-Thumbs.db
+auth.json
+
+# Frontend/build files
+/node_modules/
+/public/build/
+/public/hot/
+/public/storage
+/storage/*.key
+/storage/pail/
+
+# Backend dependencies
+/vendor/
+
+# Docker-specific
+docker-data/
+*.log
+docker-compose.override.yml
