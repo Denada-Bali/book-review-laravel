@@ -10,6 +10,23 @@ A complete Dockerized Laravel application for book reviews, featuring:
 -  Nginx web server configuration
 -  Automatic code synchronization
 
+## 🖥️ Server Architecture
+
+### Nginx Configuration
+Pre-configured with:
+- Laravel-optimized routing
+- PHP-FPM container integration
+- Security headers
+- Hidden file protection
+
+### Real-Time Code Sync
+- Local changes instantly reflect in containers
+- No rebuilds needed for most file changes
+- Volume-mapped directories:
+  - `./` → `/var/www/html` (Entire project)
+  - `./nginx/nginx.conf` → Nginx config
+    
+
 ## Prerequisites
 
 - Docker Desktop ([Install](https://www.docker.com/products/docker-desktop))
