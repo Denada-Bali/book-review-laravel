@@ -66,4 +66,4 @@ Pre-configured with:
 
 
 > **Note**: Contributor count includes Laravel framework developers.  
-> Actual project authors: [Your Name](https://github.com/Denada-Bali)
+> Actual project author: [Denalda](https://github.com/Denada-Bali)
