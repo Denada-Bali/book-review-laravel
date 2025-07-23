@@ -10,7 +10,7 @@ services:
             MYSQL_ROOT_PASSWORD: root
             MYSQL_ROOT_HOST: "%"
             MYSQL_USER: l*****l
-            MYSQL_PASSWORD: secret
+            MYSQL_PASSWORD: ****
             MYSQL_DATABASE: book_review
         ports:
             - "3308:3306"
@@ -34,7 +34,7 @@ services:
             DB_PORT: 3306
             DB_DATABASE: book_review
             DB_USERNAME: l****l
-            DB_PASSWORD: secret
+            DB_PASSWORD: ****
         volumes:
             - .:/var/www/html
         expose:
