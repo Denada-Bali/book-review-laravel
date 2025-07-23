@@ -9,15 +9,15 @@ services:
         environment:
             MYSQL_ROOT_PASSWORD: root
             MYSQL_ROOT_HOST: "%"
-            MYSQL_USER: l*****l
-            MYSQL_PASSWORD: ****
+            MYSQL_USER: laravel
+            MYSQL_PASSWORD: secret
             MYSQL_DATABASE: book_review
         ports:
             - "3308:3306"
         volumes:
             - mysql_data:/var/lib/mysql
         healthcheck:
-            test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "r***", "-***"]
+            test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-proot"]
             interval: 5s
             timeout: 5s
             retries: 5
@@ -33,8 +33,8 @@ services:
             DB_HOST: mysql
             DB_PORT: 3306
             DB_DATABASE: book_review
-            DB_USERNAME: l****l
-            DB_PASSWORD: ****
+            DB_USERNAME: laravel
+            DB_PASSWORD: secret
         volumes:
             - .:/var/www/html
         expose:
