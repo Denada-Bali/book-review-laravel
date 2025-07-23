@@ -40,7 +40,7 @@ Pre-configured with:
 1. **Clone the repository**
 
    ```bash
-   git clone [https://github.com/yourusername/book-review.git](https://github.com/Denada-Bali/book-review-laravel.git)
+   git clone https://github.com/Denada-Bali/book-review-laravel.git
    cd book-review
 
 2. Start the containers
