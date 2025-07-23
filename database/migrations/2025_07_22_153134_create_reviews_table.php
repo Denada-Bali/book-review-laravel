@@ -14,10 +14,18 @@ return new class extends Migration
         Schema::create('reviews', function (Blueprint $table) {
             $table->id();
 
+            $table->unsignedBigInteger('book_id'); //column for foreing key
+
             $table->text('review');
             $table->unsignedTinyInteger('rating');
 
             $table->timestamps();
+
+            $table->foreign('book_id')   //foreign key
+                ->references('id')
+                ->on('books')
+                ->onDelete('cascade');
+                //->onUpdate('cascade')
         });
     }
 
@@ -29,3 +37,4 @@ return new class extends Migration
         Schema::dropIfExists('reviews');
     }
 };
+;

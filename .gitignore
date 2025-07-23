@@ -33,4 +33,4 @@ auth.json
 # Docker-specific
 docker-data/
 *.log
-docker-compose.override.yml
+docker-compose.yml
